@@ -1,7 +1,22 @@
 aid: luminate
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/luminate.png
 name: Luminate
-description: Luminate is a company surfaced as a portfolio company of 8vc, gv and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Luminate Medical is a healthcare company delivering cancer care at home. Its Lotus Home
+  Infusion platform enables nurse-led, at-home chemotherapy infusion, partnering with oncology clinics,
+  health plans, and patients while keeping drug dispensing oversight with the originating cancer center.
+  Luminate is a portfolio company of 8vc and GV. As of this enrichment pass the company publishes no
+  public developer, API, documentation, or integration surface.
 url: https://raw.githubusercontent.com/api-evangelist/luminate/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Healthcare
+- Oncology
+- Home Health
+- Cancer Care
+- Infusion
+- Medical
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +43,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/luminate-domain-security.yml
 - type: Website
   url: https://luminatemed.com
+- type: PrivacyPolicy
+  url: https://luminatemed.com/privacy-policy
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
